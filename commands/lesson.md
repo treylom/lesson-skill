@@ -18,13 +18,13 @@ $ARGUMENTS
 
 | 인자 | 변수 | 예시 |
 |------|------|------|
-| 과정명 (첫 번째 토큰) | `COURSE_ID` | `MW4`, `CC101`, `AI-Intro` |
+| 과정명 (첫 번째 토큰) | `COURSE_ID` | `cc101`, `skill-builder`, `context-engineering` |
 | 주차 (두 번째 토큰) | `WEEK_NUM` | `1`, `2`, `week1` |
 
 파싱 예시:
-- `/lesson MW4 1` → COURSE_ID=MW4, WEEK_NUM=1
-- `/lesson CC101 week2` → COURSE_ID=CC101, WEEK_NUM=2
-- `/lesson AI-Intro 3` → COURSE_ID=AI-Intro, WEEK_NUM=3
+- `/lesson cc101 1-1` → COURSE_ID=cc101, WEEK_NUM=1-1
+- `/lesson skill-builder 1-2` → COURSE_ID=skill-builder, WEEK_NUM=1-2
+- `/lesson context-engineering 1-1` → COURSE_ID=context-engineering, WEEK_NUM=1-1
 
 ## 실행
 
@@ -37,10 +37,9 @@ Skill("lesson", args: "COURSE_ID={COURSE_ID} WEEK_NUM={WEEK_NUM}")
 ## 사용 예시
 
 ```
-/lesson MW4 1          → 성우하이텍 마스터워크샵 4 1주차
-/lesson MW5 2          → 마스터워크샵 5 2주차
-/lesson CC101 week1    → CC101 1주차
-/lesson AI-Intro 1     → AI 입문 과정 1주차
+/lesson cc101 1-1              → CC101 입문 레슨 1-1
+/lesson skill-builder 1-2      → 스킬 빌더 레슨 1-2
+/lesson context-engineering 1-1 → CE 레슨 1-1
 ```
 
 ## 참고

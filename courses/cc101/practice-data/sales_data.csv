@@ -1,0 +1,13 @@
+date,product,quantity,revenue,region
+2025-01-31,Industrial Sensor A,120,18000000,Seoul
+2025-02-28,Industrial Sensor A,110,16600000,Seoul
+2025-03-31,Industrial Sensor B,95,15200000,Gyeonggi
+2025-04-30,Motor Controller X,80,22400000,Busan
+2025-05-31,Industrial Sensor A,140,21000000,Daegu
+2025-06-30,Motor Controller X,76,21280000,Busan
+2025-07-31,Factory Gateway Z,52,18200000,Incheon
+2025-08-31,Factory Gateway Z,49,17150000,Incheon
+2025-09-30,Industrial Sensor B,130,20800000,Gyeonggi
+2025-10-31,Motor Controller X,90,25200000,Ulsan
+2025-11-30,Industrial Sensor A,155,23250000,Seoul
+2025-12-31,Factory Gateway Z,68,23800000,Daegu

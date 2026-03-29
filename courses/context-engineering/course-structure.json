@@ -1,0 +1,13 @@
+{
+  "id": "context-engineering",
+  "name": "컨텍스트 엔지니어링 — 팀 전체 AI 워크플로우 설계",
+  "level": "advanced",
+  "prerequisite": "skill-builder",
+  "modules": [
+    {
+      "id": "1",
+      "name": "레이어와 실행 환경 이해",
+      "lessons": ["1-1", "1-2", "1-3"]
+    }
+  ]
+}

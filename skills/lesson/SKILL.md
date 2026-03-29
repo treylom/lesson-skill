@@ -23,17 +23,17 @@ allowed-tools: "Read Write Bash Glob Grep AskUserQuestion"
 
 | 인자 | 변수 | 예시 |
 |------|------|------|
-| 과정명 | `COURSE_ID` | `MW4`, `CC101`, `AI-Intro` |
+| 과정명 | `COURSE_ID` | `cc101`, `skill-builder`, `context-engineering` |
 | 주차 | `WEEK_NUM` | `1`, `2`, `week1` |
 
 파싱 결과 예시:
-- `/lesson MW4 1` → COURSE_ID=MW4, WEEK_NUM=1
-- `/lesson CC101 week2` → COURSE_ID=CC101, WEEK_NUM=2
+- `/lesson cc101 1-1` → COURSE_ID=cc101, WEEK_NUM=1-1
+- `/lesson skill-builder 1-2` → COURSE_ID=skill-builder, WEEK_NUM=1-2
 
 인자가 없으면:
 ```
 어떤 과정의 몇 주차를 진행할까요?
-예시: /lesson MW4 1
+예시: /lesson cc101 1-1
 ```
 
 ---
@@ -156,7 +156,7 @@ Write(".lesson-memory/{이름}-{과정ID}.json", <갱신된 프로필>)
 ## 사용 예시
 
 ```text
-/lesson MW4 1        → 성우하이텍 MW4 1주차 시작
-/lesson CC101 week2  → CC101 2주차 시작
-/lesson AI-Intro 3   → AI 입문 3주차 시작
+/lesson cc101 1-1           → CC101 입문 레슨 1-1 시작
+/lesson skill-builder 1-2   → 스킬 빌더 레슨 1-2 시작
+/lesson context-engineering 1-1 → CE 레슨 1-1 시작
 ```
